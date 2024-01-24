@@ -10,6 +10,7 @@
         <module name="Template_ API_ AUTO" />
         <module name="Template_BDD" />
         <module name="Template" />
+        <module name="recruitment_nashta_API" />
       </profile>
     </annotationProcessing>
   </component>
