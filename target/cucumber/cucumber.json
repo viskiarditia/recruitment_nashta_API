@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 921968000,
+              "duration": 884121000,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 487027000,
+              "duration": 503436000,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 13481000,
+              "duration": 13533000,
               "status": "passed"
             },
             "line": 6,
@@ -54,7 +54,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-01-25T08:26:04.368Z",
+        "start_timestamp": "2024-01-25T09:23:49.928Z",
         "line": 9,
         "name": "SG 001 - Sign In Valid Data",
         "description": "",
@@ -64,7 +64,7 @@
         "steps": [
           {
             "result": {
-              "duration": 123452000,
+              "duration": 125044000,
               "status": "passed"
             },
             "line": 10,
@@ -90,7 +90,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2509000,
+              "duration": 2385000,
               "status": "passed"
             },
             "line": 4,
@@ -102,7 +102,7 @@
           },
           {
             "result": {
-              "duration": 169853000,
+              "duration": 173684000,
               "status": "passed"
             },
             "line": 5,
@@ -114,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 1303000,
+              "duration": 1919000,
               "status": "passed"
             },
             "line": 6,
@@ -133,7 +133,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-01-25T08:26:06.014Z",
+        "start_timestamp": "2024-01-25T09:23:51.553Z",
         "line": 12,
         "name": "SG 002 - Sign In for user without email",
         "description": "",
@@ -143,7 +143,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1862000,
+              "duration": 2494000,
               "status": "passed"
             },
             "line": 13,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 24184000,
+              "duration": 27138000,
               "status": "passed"
             },
             "line": 14,
@@ -167,7 +167,7 @@
           },
           {
             "result": {
-              "duration": 556000,
+              "duration": 748000,
               "status": "passed"
             },
             "line": 15,
@@ -180,6 +180,224 @@
                 }
               ],
               "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeBadRequest(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2783000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login with valid data json",
+            "match": {
+              "location": "step_definitions.auth.signIn.loginWithValidDataJson()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 171801000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1360000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-25T09:23:51.772Z",
+        "line": 17,
+        "name": "SG 003 - Sign In for user without password",
+        "description": "",
+        "id": "sign-in-recruitment-nashta-group;sg-003---sign-in-for-user-without-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1732000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "an invalid user without a password",
+            "match": {
+              "location": "step_definitions.auth.signIn.anInvalidUserWithoutAPassword()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22965000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1227000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the response status code should be 400 Bad Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeBadRequest(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2079000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login with valid data json",
+            "match": {
+              "location": "step_definitions.auth.signIn.loginWithValidDataJson()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 162251000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1472000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-25T09:23:51.984Z",
+        "line": 22,
+        "name": "SG 004 - Sign In for user invalid data unregister",
+        "description": "",
+        "id": "sign-in-recruitment-nashta-group;sg-004---sign-in-for-user-invalid-data-unregister",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1829000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "an invalid unregistered user",
+            "match": {
+              "location": "step_definitions.auth.signIn.anInvalidUnregisteredUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25966000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 730000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the response status code should be 404 Not Found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeNotFound(int)"
             },
             "keyword": "Then "
           }

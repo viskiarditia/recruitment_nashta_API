@@ -41,4 +41,19 @@ public class signIn {
     File loginInvalid1 = new File(constant.JSON_REQ_BODY+"auth/credentialsWithoutEmail.json");
         signInAPI.setPostLoginUtama(loginInvalid1);
     }
+
+    @Given("an invalid user without a password")
+    public void anInvalidUserWithoutAPassword() {
+        File loginInvalid2 = new File(constant.JSON_REQ_BODY+"auth/credentialsWithoutPassword.json");
+        signInAPI.setPostLoginUtama(loginInvalid2);
+    }
+
+    @Given("an invalid unregistered user")
+    public void anInvalidUnregisteredUser() {
+        File loginInvalid2 = new File(constant.JSON_REQ_BODY+"auth/credentialsUnregistered.json");
+        signInAPI.setPostLoginUtama(loginInvalid2);
+    }
+
+
+
 }

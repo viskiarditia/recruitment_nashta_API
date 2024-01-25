@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>SG 001 - Sign In Valid Data</title>
+    <title>SG 003 - Sign In for user without password</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -128,7 +128,7 @@
 
             > <a href="87db57a66b2ad42e7bd10baf2fad7120fe921531847bbaf7316ade3147012fa9.html">Auth</a>
             > <a href="50f1ea85f268d288879b60faa39658b9e269735bf870398fc4e76dfd6616bd31.html">Sign In Recruitment Nashta Group</a>
-        > SG 001 - Sign In Valid Data
+        > SG 003 - Sign In for user without password
         </span>
         </div>
         <div class="rightbg"></div>
@@ -192,7 +192,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    SG 001 - Sign In Valid Data
+                                    SG 003 - Sign In for user without password
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -255,7 +255,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">881ms</span></td>
+                        <td width="100"><span class="top-level-step">002ms</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -280,7 +280,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">776ms</span></td>
+                        <td width="100"><span class="nested-group-step"></span></td>
                     </tr>
 
                                 </table>
@@ -311,7 +311,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">503ms</span></td>
+                        <td width="100"><span class="top-level-step">172ms</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -352,9 +352,9 @@
                                         <h4>Content Body</h4>
                                         <pre>/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_API/src/test/resources/JSON/jsonReqBody/auth/credentials.json</pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Content-Type: application/json; charset=UTF-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Vary: Origin<br>Date: Thu, 25 Jan 2024 09:23:51 GMT<br>X-Kong-Upstream-Latency: 143<br>X-Kong-Proxy-Latency: 19<br>Via: kong/2.6.0</pre>
+                                        <pre>Content-Type: application/json; charset=UTF-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Vary: Origin<br>Date: Thu, 25 Jan 2024 09:23:52 GMT<br>X-Kong-Upstream-Latency: 150<br>X-Kong-Proxy-Latency: 0<br>Via: kong/2.6.0</pre>
                                     <h4>Response Body</h4>
-                                        <pre>{<br>    &quot;code&quot;: 201,<br>    &quot;status&quot;: true,<br>    &quot;message&quot;: &quot;Data created&quot;,<br>    &quot;data&quot;: {<br>        &quot;token&quot;: {<br>            &quot;accesstoken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VycyI6bnVsbCwidXNlcl9hY2Nlc3MiOm51bGwsImxpc3RfZW1wX2FjY2VzcyI6bnVsbCwiZmxhZ19hbGwiOmZhbHNlLCJpc3MiOiJjYmpManplR0RLWkpVL2R3dFRwMUtHZ3ZwRWUwOGYxMW8wc3Z1TTMwUzlheGhlRDVSdUd2Nk42WGUwT3Zsd29mTFhLRzJJRmRxOGdUODJacEEyY090V0o2ZHZ0dTkvMjZRQ3RzeEpmVTg5UExlZ05sWW5LMnV2dGllZndGN2JmMUg0RDc3aklrQ0Jva2loTm03WEplem45Z2lMNzN6UUNCR2YrZk9nQ0JzdWJEYzBCbjZqRzVhMUw3V2FiMW53UTQrTHRzeXFyVHZyL1Rkc3VHR1VZeXZpUEcxZjRTczNPR1daYXlXS1kxY0VMcnBGQklwZzI4Z0RINEora2pvRmJoK1h1aGFINjZaR0doeUNPSm1leGh6UHRWVkZzcGZRc1E2TTNhaUFhd1UvUFhEQS92bEZ4YS9oR0E3UC9TSlo0V0plekJCZnVtcU10a1A1b01jbE8xQmc9PSIsImV4cCI6MTcwNjE3NjQzMSwiaWF0IjoxNzA2MTc0NjMxLCJqdGkiOiJ3MlRTSUQwZXF2VEUxZ3JUNG5td1hGWmtrNXpXanJrZVBSb1h2V2ZFSmhWeXNhNFdMbzRGS0hQSGcyS0pSWmRDZFk1VkNDSjFhU3hoTHl4ZlZXNWJ5aXBMUjZIUXJyWUJLVHp0cE5tai8rVUs1a2JqYVlkZGNwS0VQZGdsaTc0UGxwQ2pnbjhlTzBENi8rMHl0L0ZZQi91dnRTajJFM1VRQng4K1paVHRRLzA4U1VNeFlNbDJNVWJzTmRzdVM4VmEwSzJpY0pKbktCdzA0UFphZjZxN3plcGpsUEcxYkZjL1FUTzR5MEZYalNUM2UyQk1MK081SW95dFkzWVNjZ1dKSTRpSlhwL294VGVKTzZCczJVcTNTaGdQcTlHNG4xMHVHbGY0YWg1SmhvTFNpS1Z2Y2Vhck1CV0JsMG9ISjJ4emMxRHM5N1pNcFRDVy82RHFQb0g4NHc9PSJ9.MoZ-oboubJNKhQpH8AhHz0VZgu_VWtQTsFKjROn2oAI&quot;,<br>            &quot;refreshtoken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkJiU0FFY2psZmZKdWpkUUlMSWZ6Q3BTaU5sbG5aVzRRQnlnYVFGT3VKV3Jnbnl5UmMvU1dpSGRHZU1HMzZPVyt0QXQ1TzdvODhSaXJsRHpGbXZzdWI5eFJDNUhQM0c5Uk9lREVCc2dQeDBnVk56enZTMFc1b1JSQURVRzZXVDRZdWtBZDc4aGxRUlIvbEtVM2xOeVFvTzk5VFoyUG00dG5GcS85cjkwRE5oQVdaWVhST053OGZWR0E5eW4xUWtZVFU5RDhSa0I5Z1RqaHgxZWZFRVhpbkhBa055a1p2L3puakFmczZ2MnFPNkRwNWxTbWhvRGR5aEVWaXhmZ2libUFoZWZqSDM1NDEyamVHZ0Z2bDRMNk5ST2llTnpLeWo0RG1EdXRoUTVhNitSU1JJSnBaOUJwTk0wVDhjS3lyVWluWnNzWTFYYkdUYjgvRDk0NjZtT001QT09IiwiY29tcGFueV9pZCI6IkdZWVU2cGplNk5TenJqa29jT2hFS3VLZjN6YmppY3JrcVJEMWRsRlJCTW1EdjU0K1JWYURxaUUrZGtDZ1E3QUdLTGdTNDEvNllCVEkrbWxxZGJtckpCR1F6VXlzNnhSdWwzOGdzUHBjOVpSN0VEMU0wLzExU0ZGN1FqcmdFekpZZDZYWCtqamJXRkwxNlpaamJIdUNKSXNzVGZJUUdpZ3REV2VacTFLM3VBUUgvYWVxMmgwQTQ1WGt6dlZMbzJNc1l6SlJJVUN3YW5GbnhNWnR6Z09hN1ZwcitrVmRNYUxXVk45MnUyVTlQd29kNjFxbi9acEQrT05wRmViNzRwMnNwWG0vaHZhbTVRUXFuTWZJdEZ6SHF5UTFzSDlpSjRHWkhIdW1OOWhtY2dySXVwOVNoTmRpa2hCVkpWV3AveEduTktzVzBiQW1GZEM2c1ZEeHBSdGhHZz09IiwiaXNzIjoiZTNtY250M1doYm5vbEV6NlY1QzE2aUFHSTdxMWgwUUR5UEpBVnR5eGt2SUxiREJIMFZ0Mm4vRHdMTTkwN1ZyV3dSMmVFNStjdmZBdzdtaytyOTRidXQ1K1B6eHJNMEJFVjFXNHNkQVVlYjhuMHZzOUZUNGNmRUNlYlNoOHV2UlhFR3lNK3lQcUl5WUtnSXRKeFYyODF0dmQ2Y1FnSUhaQ0Z1dGcvQ005TFhPY2NSTkFnOWVSOVYxdzJBdWdEM3pxZ1ZkMFRCdVN6Q0s5YTlkV2VvOHgyaWtCVUQrcTJLMjJJdzQxN1puaXlybG5rTVliSkM0WXlsMXlNSGZYOWhCSFJ2Y3FpVnF6WS9KcVlwL1lRWlZVbzllNUY4SzFSeG9Ja01vcUZWZDFLQUg1ZXNUZ2t5cTBuUDNhQ2YrUjdEOGVGSnJzNklBdG53a2RoQnl6dnRlT0NnPT0iLCJleHAiOjE3MDYyNjEwMzEsImlhdCI6MTcwNjE3NDYzMX0.g9IpquoA5RtRI2C0CHWnlihm-XWHvjnN8G_lHixT_2I&quot;<br>        }<br>    },<br>    &quot;error_fields&quot;: null<br>}</pre>
+                                        <pre>{<br>    &quot;code&quot;: 201,<br>    &quot;status&quot;: true,<br>    &quot;message&quot;: &quot;Data created&quot;,<br>    &quot;data&quot;: {<br>        &quot;token&quot;: {<br>            &quot;accesstoken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VycyI6bnVsbCwidXNlcl9hY2Nlc3MiOm51bGwsImxpc3RfZW1wX2FjY2VzcyI6bnVsbCwiZmxhZ19hbGwiOmZhbHNlLCJpc3MiOiJkWDZpbXNLRER2MlFHcUpRRnZtTkt3bWRlWE5FbkxJbnlRaXIvQVlaN3RLejRwdE5vbXZoVGhEbElUc1VCazI4SjdBL3lWNytDOEUwcWZBMEtXeVYrUXNMd2FaM2hMVWpNNDRGWFc1dEtpTjVDN3RaNmdockVVZk5PWmwyQ1cxMG1YZDU3Y0drQnFpeGU2dDdxSEk3TFA3UkRVTWcrdzYwS2NTNHJOY3B1UkJyR2xSTlZjSGlibnBPeGNIejVwOGdxRTJpTkkyMlI1MWZWQVVXeTIzR2tOYjhxN1htVUN6Z2RkMUF0VERjbUZlcVkrZHdYUTNNSUFBRnRnaTF5UWIrOHlVV3RKWkxTMlEyb1hyTDdCc0orMUw3WEFIRVZkTVMvN3BrTG9YMVpJNll2elIvT3ZsVmx6TGpVanZiZ1hWcHJ5b1ozbmhxaEFaN0lwU2tmZkFnNnc9PSIsImV4cCI6MTcwNjE3NjQzMiwiaWF0IjoxNzA2MTc0NjMyLCJqdGkiOiJsM0ZreGNxamFLc28vUGVJbWM4L24ydUVMeGF3cTBvRUJLL2VzVm1VbzFXT29qV2R4c3F1Yk1nbzlHQUtDMnNTRlVCQ1JoRTl2NEhyYTRvQ3JsS1pQNmR3cDNjNUovQ0x6TjBoclV0R0VramJwLzBpaEk1N29TUTFlL2lKVjdvOFhLbWdFOGcvK3g2bHhMK05rWURtRGZIb2FYTmlmNFdNZzcxMG00UHI2UUJIT25xWkVwZjJDT1hGWkFiVjJxOFY5aWNBZWhvZWh2ZmJPVm1ZZGFIM3pmdjMwKy8yRDlvdVFVRklBMG9pUk5hc1hudVlKbTU2Q2xOMWtHZUpnV0RMWkJ6UU53OE8xK3MwSHlQMTM3cmFobmRaM0o4RGdqY0l2VEFoUzBpeTVSd1RhQ1QvRUdmaXpyNzVUdlRMaWhSWjl5WkRpQit1V0dnSGhOTHJXQ0tvZmc9PSJ9.ILJqkM71tfD4tv2-WOHNSEg5BVszgRqSMpA8pwADzG4&quot;,<br>            &quot;refreshtoken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1KdW5wdEh1R2ZOamlwVkkzUy9pVUpndzUrZjVPdEhkL1ZlNytyTTNLWkJHaEdNZlZMQ293aTdUdkJxWi80eURyejJTb05WOGEvMFo3RVhodXdaT0hrd0VIN25IR0RndXV5cVlKZzR0aGRKTWE0MlVSVTRsWWEybUk2NkV3aDQyUGI3MzNheitrQmo0ZDhtSHo2c3BjL3dOR2hnYzR1VTBNUktNbVp5MEJlTUlDa1pvRUNqK3NUOXVEYU9lcHllZ0pITkw2NXUrMVdWSEEzUnNxdkl5VXNjNWpuZlgyTFFhbVRiNnpOV0c2c3F3V0VnSEI1c0lsdFNiT0dXNUFFZG81a042OXowbzExNDhkK25Qb2hmZktnU0dCcTNCajArT2V3bGdITnZoRGpSenZUWnU2V0NlNnRJWGI3VXdYZ0FEKzl3K05mRkpVTFlidmpjYmR6K09uQT09IiwiY29tcGFueV9pZCI6InJxMzBSUW1CcXFqMXJFeU9qbGNwVFVnOFB5dCt0NVM4WkF6anZKRldUU2Y1dTIvZGgycC9OakI4dXBUK2xVZG9oNWpLT1hLemcwWkwyeHFZbTBKM2d6U2tWbFpseEYycEErU1U1QTlrMlJLdWZTWXlndWpHcWlvWGRWY0Z4L0o3bk16S2MydmRrVFlvVlkzUDl2ODJCMUlNVkJwbUVyQm5HYkpXakMrNHpKekREcENpNE1zMnpibCtlWWhWS2swOVpEZnduMHkwajVLZmZrQUFtUUlrNWNYeTBXQjhKM3d5MXBwVm1wcGw1WEh1c1pqTjB4NGhZTzBNWXhkUHRSbTdyRElWRUUyaE8vRGd3dzBSVTdNK1pjU2VhMHdFR0RDS1p0aGZoamdZNkZwMFlpRThqNFBpeEpWNkFWMkwyOVNWYTU0alROUmNFSU51V2JwWkRHT1R3dz09IiwiaXNzIjoibFcyTCttdnZ4NVkxZjR4bWFMWjN6VitLdUR1YzkvM0dibDhmdGF5dUtxZW5JcEliKzJJR2VHWE9zc1FtSlBtMXFnNW12a3Q0S2xpQSs1aHRVWUdXb0lYVzM5YSs1MmxRQUdiSzdDK3RDMTBWNm9yQTB4dzlIb2QwZjZqMFhRY2FmQlhSemNlV3RZdmlmVm5ESDNyZndXVXVoMnNoUUdVWnVwSjIzRWVzeTI3RW4xNURXSERWMXBxWVFaUlhLdWNhMGdmUnBkTGc1NGdQSDludkxsOS9aRWZHVTJMNWo2V0ZsdTd5bW5UZmNIY051WG8xNVlYd0pvcnBKYXIxNFFZY1VXVnNXMmVXQy9uVzVWUEdHVzh0cW4reUpNWnMwZ2toVjZlQlRmQzJ2V3hOLytEWnFaTU8xUEdtNnhBNThOQVJ2VDIwZ2dKSUNDYzduS1NqdUgrM1J3PT0iLCJleHAiOjE3MDYyNjEwMzIsImlhdCI6MTcwNjE3NDYzMn0.0ilaqPT9e-Dd2kOSUMYooT0rpg8NTMJlH48qiuZsIeY&quot;<br>        }<br>    },<br>    &quot;error_fields&quot;: null<br>}</pre>
                                 </div>
                             </div>
                         </div>
@@ -391,12 +391,153 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">013ms</span></td>
+                        <td width="100"><span class="top-level-step">001ms</span></td>
                     </tr>
                     <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="3"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection3 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                                   style="display:block;">
+                                    <span class="top-level-step">
+                                                Given an invalid user without a password
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">001ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection3" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="3-0"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Login with valid data
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step"></span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="50" class="step-icon">
+                            <a name="4"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection4 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                                   style="display:block;">
+                                    <span class="top-level-step">
+                                                When Send request post Login
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">023ms</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection4" class="step-table-nested" style="display:none;">
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="4-0"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                POST http://10.10.3.132/rcrt/auth/signin
+                                        </span>
+                                <span class="evidence">
+                                        <span class="piece-of-evidence">
+                    <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-9">
+                            REST Query
+                        </button>
+                    </span>
+                    <!-- Modal -->
+                    <div class="rest-query-details">
+                        <div class="collapse multi-collapse" id="restModal-REST-9">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Response</h4>
+                                        <p>URL: http://10.10.3.132/rcrt/auth/signin</p>
+                                        <p>Status code: 400</p>
+                                        <p>Content Type: application/json</p>
+                                        <h4>Request Headers</h4>
+                                        <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                        <h4>Content Body</h4>
+                                        <pre>/Users/fizkiarditiakusuma/Documents/Nastha_Group/recruitment_nashta_API/src/test/resources/JSON/jsonReqBody/auth/credentialsWithoutPassword.json</pre>
+                                        <h4>Response Headers</h4>
+                                        <pre>Content-Type: application/json; charset=UTF-8<br>Content-Length: 131<br>Connection: keep-alive<br>Vary: Origin<br>Date: Thu, 25 Jan 2024 09:23:52 GMT<br>X-Kong-Upstream-Latency: 1<br>X-Kong-Proxy-Latency: 0<br>Via: kong/2.6.0</pre>
+                                    <h4>Response Body</h4>
+                                        <pre>{<br>    &quot;code&quot;: 400,<br>    &quot;status&quot;: false,<br>    &quot;message&quot;: &quot;Data failed to add&quot;,<br>    &quot;data&quot;: null,<br>    &quot;error_fields&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Password is a required field&quot;<br>        }<br>    ]<br>}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        </span>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step"></span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="50" class="step-icon">
+                            <a name="5"></a>
                                 <span style="margin-left: 20px;"
                                       class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
@@ -405,7 +546,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="top-level-step">
-                                                And the response should match the JSON schema
+                                                Then the response status code should be 400 Bad Request
                                         </span>
                                 <span class="evidence">
                                 </span>
@@ -413,12 +554,12 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">125ms</span></td>
+                        <td width="100"><span class="top-level-step">001ms</span></td>
                     </tr>
                 <tr class="test-SUCCESS">
                         <td colspan="2"></td>
                     <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>1.59s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.21s</em></span></td>
                 </tr>
 
             </table>

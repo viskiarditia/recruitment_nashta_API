@@ -14,15 +14,13 @@ Feature: Sign In Recruitment Nashta Group
     When Send request post Login
     Then the response status code should be 400 Bad Request
 
-#  Scenario: SG 003 - Sign In for user without password
-#    Given an invalid user without a password
-#    When Send request post Login
-#    Then the response status code should be 400 Bad Request
+  Scenario: SG 003 - Sign In for user without password
+    Given an invalid user without a password
+    When Send request post Login
+    Then the response status code should be 400 Bad Request
 
-#  Scenario: SG 004 - Sign In for user invalid data unregister
-#    Given an unregistered user with the following credentials:
-#      | username           | password           |
-#      | invalid_username   | invalid_password   |
-#    When the user sends a POST request to login
-#    Then the response status code should be 401 Unauthorized
+  Scenario: SG 004 - Sign In for user invalid data unregister
+    Given an invalid unregistered user
+    When Send request post Login
+    Then the response status code should be 404 Not Found
 
