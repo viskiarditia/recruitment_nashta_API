@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Sign In Recruitment Nashta Group" skipped="0" tests="2" time="1.82" timestamp="2024-01-25 03:26:04"><testcase name="SG 001 - Sign In Valid Data"/><testcase name="SG 002 - Sign In for user without email"/></testsuite>

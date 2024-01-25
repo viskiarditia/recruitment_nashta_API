@@ -1,3 +1,6 @@
-step_definitions/WeatherAPI.class
-step_definitions/CucumberTestSuite.class
-step_definitions/GETStepdefs.class
+step_definitions/cucumberTestSuite.class
+step_definitions/auth/signIn.class
+step_definitions/utills/constant.class
+step_definitions/utills/method.class
+pageObjectAPI/auth/signInAPI.class
+step_definitions/utills/responseStatusCode.class

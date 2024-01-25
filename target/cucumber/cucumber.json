@@ -3,130 +3,202 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-06-15T12:54:48.484Z",
-        "line": 4,
-        "name": "Get current weather",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "testing-api-get-jojonomic;get-current-weather",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 2440355000,
+              "duration": 921968000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User Set Paramater API Current Weather",
+            "line": 4,
+            "name": "Login with valid data json",
             "match": {
-              "location": "step_definitions.GETStepdefs.userSetParamaterAPICurrentWeather()"
+              "location": "step_definitions.auth.signIn.loginWithValidDataJson()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 16062000,
+              "duration": 487027000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Status Code Should be 200 OK",
+            "line": 5,
+            "name": "Send request post Login",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 22
-                }
-              ],
-              "location": "step_definitions.GETStepdefs.statusCodeShouldBeOK(int)"
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 172839000,
+              "duration": 13481000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Validate GET Current Weather json schema",
+            "line": 6,
+            "name": "the response status code should be 201 Created",
             "match": {
-              "location": "step_definitions.GETStepdefs.validateGETCurrentWeatherJsonSchema()"
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
             },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@GET"
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2023-06-15T12:54:51.200Z",
+        "start_timestamp": "2024-01-25T08:26:04.368Z",
         "line": 9,
-        "name": "Get forecast weather",
+        "name": "SG 001 - Sign In Valid Data",
         "description": "",
-        "id": "testing-api-get-jojonomic;get-forecast-weather",
+        "id": "sign-in-recruitment-nashta-group;sg-001---sign-in-valid-data",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 933853000,
+              "duration": 123452000,
               "status": "passed"
             },
             "line": 10,
-            "name": "Set Paramater Forecast Weather",
+            "name": "the response should match the JSON schema",
             "match": {
-              "location": "step_definitions.GETStepdefs.setParamaterForecastWeather()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1789000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Status Code Should be 200 OK",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 22
-                }
-              ],
-              "location": "step_definitions.GETStepdefs.statusCodeShouldBeOK(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 12038000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Validate GET forecast Weather json schema",
-            "match": {
-              "location": "step_definitions.GETStepdefs.validateGETForecastWeatherJsonSchema()"
+              "location": "step_definitions.auth.signIn.theResponseShouldMatchTheJSONSchema()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@GET"
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2509000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login with valid data json",
+            "match": {
+              "location": "step_definitions.auth.signIn.loginWithValidDataJson()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169853000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1303000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-25T08:26:06.014Z",
+        "line": 12,
+        "name": "SG 002 - Sign In for user without email",
+        "description": "",
+        "id": "sign-in-recruitment-nashta-group;sg-002---sign-in-for-user-without-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1862000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "an invalid user without a email",
+            "match": {
+              "location": "step_definitions.auth.signIn.anInvalidUserWithoutAemail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24184000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 556000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the response status code should be 400 Bad Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeBadRequest(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
           }
         ]
       }
     ],
-    "name": "Testing API GET Jojonomic",
+    "name": "Sign In Recruitment Nashta Group",
     "description": "",
-    "id": "testing-api-get-jojonomic",
+    "id": "sign-in-recruitment-nashta-group",
     "keyword": "Feature",
-    "uri": "classpath:features//GET.feature",
+    "uri": "classpath:features//auth/signIn.feature",
     "tags": [
       {
-        "name": "@GET",
+        "name": "@Login",
         "type": "Tag",
         "location": {
           "line": 1,
