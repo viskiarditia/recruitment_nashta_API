@@ -2,7 +2,7 @@ package step_definitions.utills;
 
 public class constant {
         public static final String URL = "http://10.10.3.132/rcrt/"; // all testing
-//    public static final String URL = "http://10.10.3.132/v3/sysparam/"; // khusus forgot password
+        public static final String URL_FORGOT = "http://10.10.3.132/v3/sysparam/"; // khusus forgot password
 
         public static final String DIR = System.getProperty("user.dir");
 

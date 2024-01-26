@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Sign In Recruitment Nashta Group","SG 001 - Sign In Valid Data","SUCCESS","2024-01-25T16:23:49.958558+07:00[Asia/Jakarta]","0.0","1.59"
-"Sign In Recruitment Nashta Group","SG 002 - Sign In for user without email","SUCCESS","2024-01-25T16:23:51.554443+07:00[Asia/Jakarta]","0.0","0.22"
-"Sign In Recruitment Nashta Group","SG 003 - Sign In for user without password","SUCCESS","2024-01-25T16:23:51.773924+07:00[Asia/Jakarta]","0.0","0.21"
-"Sign In Recruitment Nashta Group","SG 004 - Sign In for user invalid data unregister","SUCCESS","2024-01-25T16:23:51.985243+07:00[Asia/Jakarta]","0.0","0.2"

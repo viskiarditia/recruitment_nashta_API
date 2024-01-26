@@ -11,8 +11,6 @@ import step_definitions.utills.constant;
 
 import java.io.File;
 
-import static org.jruby.embed.variable.BiVariable.Type.Constant;
-
 public class signIn {
     @Steps
     signInAPI signInAPI;
@@ -33,7 +31,6 @@ public class signIn {
     public void theResponseShouldMatchTheJSONSchema() {
         File JsonValidate = new File(constant.JSON_SCHEMA_VALIDATOR+"signInValidator.json");
         SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(JsonValidate));
-
     }
 
     @Given("an invalid user without a email")

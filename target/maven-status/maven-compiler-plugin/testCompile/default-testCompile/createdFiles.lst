@@ -1,6 +1,0 @@
-step_definitions/cucumberTestSuite.class
-step_definitions/auth/signIn.class
-step_definitions/utills/constant.class
-step_definitions/utills/method.class
-pageObjectAPI/auth/signInAPI.class
-step_definitions/utills/responseStatusCode.class
