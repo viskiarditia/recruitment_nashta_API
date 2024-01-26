@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Forgot Password","SG 005 - Forgot Password valid data","SUCCESS","2024-01-26T16:13:01.101155+07:00[Asia/Jakarta]","0.0","1.36"
+"Forgot Password","SG 006 - Forgot Password invalid data unregister","FAILURE","2024-01-26T16:13:02.478042+07:00[Asia/Jakarta]","0.0","0.1"
+"Sign In Recruitment Nashta Group","SG 001 - Sign In Valid Data","SUCCESS","2024-01-26T16:13:02.579078+07:00[Asia/Jakarta]","0.0","0.3"
+"Sign In Recruitment Nashta Group","SG 002 - Sign In for user without email","SUCCESS","2024-01-26T16:13:02.880917+07:00[Asia/Jakarta]","0.0","0.14"
+"Sign In Recruitment Nashta Group","SG 003 - Sign In for user without password","SUCCESS","2024-01-26T16:13:03.026678+07:00[Asia/Jakarta]","0.0","0.21"
+"Sign In Recruitment Nashta Group","SG 004 - Sign In for user invalid data unregister","SUCCESS","2024-01-26T16:13:03.241928+07:00[Asia/Jakarta]","0.0","0.2"

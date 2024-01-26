@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "object",
+          "properties": {
+            "accesstoken": {
+              "type": "string"
+            },
+            "refreshtoken": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "accesstoken",
+            "refreshtoken"
+          ]
+        }
+      },
+      "required": [
+        "token"
+      ]
+    },
+    "error_fields": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "code",
+    "status",
+    "message",
+    "data",
+    "error_fields"
+  ]
+}

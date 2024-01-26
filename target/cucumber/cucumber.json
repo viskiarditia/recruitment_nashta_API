@@ -1,0 +1,2548 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-01-26T09:13:01.070Z",
+        "line": 4,
+        "name": "SG 005 - Forgot Password valid data",
+        "description": "",
+        "id": "forgot-password;sg-005---forgot-password-valid-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 890552000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a registered user who forgot the password",
+            "match": {
+              "location": "step_definitions.auth.forgotPassword.aRegisteredUserWhoForgotThePassword()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 406188000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Send request post to recover the password",
+            "match": {
+              "location": "step_definitions.auth.forgotPassword.sendRequestPostToRecoverThePassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12378000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@forgotpassword"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:02.477Z",
+        "line": 9,
+        "name": "SG 006 - Forgot Password invalid data unregister",
+        "description": "",
+        "id": "forgot-password;sg-006---forgot-password-invalid-data-unregister",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2424000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "an unregistered user who forgot the password",
+            "match": {
+              "location": "step_definitions.auth.forgotPassword.anUnregisteredUserWhoForgotThePassword()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52382000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Send request post an unregistered user the password",
+            "match": {
+              "location": "step_definitions.auth.forgotPassword.sendRequestPostAnUnregisteredUserThePassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c404\u003e but was \u003c200\u003e.\n\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeNotFound(responseStatusCode.java:29)\n\tat ✽.the response status code should be 404 Not Found(classpath:features//auth/forgotPassword.feature:12)\n",
+              "duration": 5643000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "the response status code should be 404 Not Found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeNotFound(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@forgotpassword"
+          }
+        ]
+      }
+    ],
+    "name": "Forgot Password",
+    "description": "",
+    "id": "forgot-password",
+    "keyword": "Feature",
+    "uri": "classpath:features//auth/forgotPassword.feature",
+    "tags": [
+      {
+        "name": "@recruitment",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@forgotpassword",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2180000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login with valid data json",
+            "match": {
+              "location": "step_definitions.auth.signIn.loginWithValidDataJson()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156866000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1919000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:02.578Z",
+        "line": 9,
+        "name": "SG 001 - Sign In Valid Data",
+        "description": "",
+        "id": "sign-in-recruitment-nashta-group;sg-001---sign-in-valid-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 131602000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the response should match the JSON schema",
+            "match": {
+              "location": "step_definitions.auth.signIn.theResponseShouldMatchTheJSONSchema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@signin"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2510000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login with valid data json",
+            "match": {
+              "location": "step_definitions.auth.signIn.loginWithValidDataJson()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 107160000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1009000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:02.880Z",
+        "line": 12,
+        "name": "SG 002 - Sign In for user without email",
+        "description": "",
+        "id": "sign-in-recruitment-nashta-group;sg-002---sign-in-for-user-without-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1185000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "an invalid user without a email",
+            "match": {
+              "location": "step_definitions.auth.signIn.anInvalidUserWithoutAemail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25019000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 688000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the response status code should be 400 Bad Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeBadRequest(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@signin"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1836000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login with valid data json",
+            "match": {
+              "location": "step_definitions.auth.signIn.loginWithValidDataJson()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 174129000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1613000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.026Z",
+        "line": 17,
+        "name": "SG 003 - Sign In for user without password",
+        "description": "",
+        "id": "sign-in-recruitment-nashta-group;sg-003---sign-in-for-user-without-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1914000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "an invalid user without a password",
+            "match": {
+              "location": "step_definitions.auth.signIn.anInvalidUserWithoutAPassword()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25225000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 633000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the response status code should be 400 Bad Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeBadRequest(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@signin"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2543000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login with valid data json",
+            "match": {
+              "location": "step_definitions.auth.signIn.loginWithValidDataJson()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169509000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 843000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.241Z",
+        "line": 22,
+        "name": "SG 004 - Sign In for user invalid data unregister",
+        "description": "",
+        "id": "sign-in-recruitment-nashta-group;sg-004---sign-in-for-user-invalid-data-unregister",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 973000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "an invalid unregistered user",
+            "match": {
+              "location": "step_definitions.auth.signIn.anInvalidUnregisteredUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18038000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Send request post Login",
+            "match": {
+              "location": "step_definitions.auth.signIn.SendrequestpostLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 408000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the response status code should be 404 Not Found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeNotFound(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@signin"
+          }
+        ]
+      }
+    ],
+    "name": "Sign In Recruitment Nashta Group",
+    "description": "",
+    "id": "sign-in-recruitment-nashta-group",
+    "keyword": "Feature",
+    "uri": "classpath:features//auth/signIn.feature",
+    "tags": [
+      {
+        "name": "@recruitment",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@signin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 2427000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 501000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 338000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.452Z",
+        "line": 8,
+        "name": "JOR 002 - Update Job Order Request",
+        "description": "",
+        "id": "job-order-request;jor-002---update-job-order-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 913000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Send request method to POST path to Param Company Organization",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToPOSTPathToParamCompanyOrganization()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 474000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 263000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Validate json schema response Param Company Organization",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseParamCompanyOrganization()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 844000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 800000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 725000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.471Z",
+        "line": 13,
+        "name": "JOR 003 - Delete Job Order Request",
+        "description": "",
+        "id": "job-order-request;jor-003---delete-job-order-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 348000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Send request method to DELETE path to Request Page",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToDELETEPathToRequestPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "the response status code should be 204 No Content",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeNoContent(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 329000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Validate json schema response Request Page",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseRequestPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 652000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 299000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 199000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.489Z",
+        "line": 18,
+        "name": "JOR 004 - Job Order Request Approval",
+        "description": "",
+        "id": "job-order-request;jor-004---job-order-request-approval",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 205000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Send request method to GET path to Job Order Request Approval",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToJobOrderRequestApproval()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 214000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 233000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Validate json schema response Job Order Request Approval",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseJobOrderRequestApproval()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 698000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 306000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 244000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.501Z",
+        "line": 23,
+        "name": "JOR 005 - Job Order Request Rejected",
+        "description": "",
+        "id": "job-order-request;jor-005---job-order-request-rejected",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 299000,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Send request method to GET path to Job Order Request Rejected",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToJobOrderRequestRejected()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 219000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 562000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "Validate json schema response Job Order Request Rejected",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseJobOrderRequestRejected()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 703000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 300000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 265000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.515Z",
+        "line": 28,
+        "name": "JOR 006 - Job Order Request Revised",
+        "description": "",
+        "id": "job-order-request;jor-006---job-order-request-revised",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 203000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "Send request method to GET path to Job Order Request Revised",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToJobOrderRequestRevised()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 212000,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 202000,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Validate json schema response Job Order Request Revised",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseJobOrderRequestRevised()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 563000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 258000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 200000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.526Z",
+        "line": 33,
+        "name": "JOR 007 - Job Order Request In Progress",
+        "description": "",
+        "id": "job-order-request;jor-007---job-order-request-in-progress",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 183000,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Send request method to GET path to Job Order Request In Progress",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToJobOrderRequestInProgress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 395000,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 315000,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "Validate json schema response Job Order Request In Progress",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseJobOrderRequestInProgress()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 555000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 240000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 171000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.536Z",
+        "line": 38,
+        "name": "JOR 008 - Job Order Request In History Approval",
+        "description": "",
+        "id": "job-order-request;jor-008---job-order-request-in-history-approval",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 172000,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "Send request method to GET path to Job Order Request In History Approval",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToJobOrderRequestInHistoryApproval()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168000,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 167000,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "Validate json schema response Job Order Request In History Approval",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseJobOrderRequestInHistoryApproval()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 555000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 394000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.545Z",
+        "line": 43,
+        "name": "JOR 009 - Job Order Request In History Rejected",
+        "description": "",
+        "id": "job-order-request;jor-009---job-order-request-in-history-rejected",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 165000,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "Send request method to GET path to Job Order Request In History Rejected",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToJobOrderRequestInHistoryRejected()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 233000,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 184000,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "Validate json schema response Job Order Request In History Rejected",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseJobOrderRequestInHistoryRejected()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 553000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 203000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.555Z",
+        "line": 48,
+        "name": "JOR 010 - Job Order Request In History Revised",
+        "description": "",
+        "id": "job-order-request;jor-010---job-order-request-in-history-revised",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 161000,
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "Send request method to GET path to Job Order Request In History Revised",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToJobOrderRequestInHistoryRevised()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 160000,
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 159000,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "Validate json schema response Job Order Request In History Revised",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseJobOrderRequestInHistoryRevised()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 893000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 161000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.564Z",
+        "line": 53,
+        "name": "JOR 011 - Cancel Job Order Request",
+        "description": "",
+        "id": "job-order-request;jor-011---cancel-job-order-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 209000,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "Send request method to POST path to Cancel Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToPOSTPathToCancelJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167000,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 144000,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "Validate json schema response Cancel Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseCancelJobOrderRequest()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 508000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 184000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.576Z",
+        "line": 59,
+        "name": "JOR 012 - Get One Job Order Request",
+        "description": "",
+        "id": "job-order-request;jor-012---get-one-job-order-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 145000,
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "Send request method to GET path to Get One Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToGetOneJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 226000,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 176000,
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "Validate json schema response Get One Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseGetOneJobOrderRequest()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 495000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 394000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 178000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.585Z",
+        "line": 64,
+        "name": "JOR 013 - List Job Posting",
+        "description": "",
+        "id": "job-order-request;jor-013---list-job-posting",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 149000,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "Send request method to GET path to List Job Posting",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToListJobPosting()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144000,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 144000,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "Validate json schema response  List Job Posting",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseListJobPosting()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 519000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 154000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 149000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.593Z",
+        "line": 69,
+        "name": "JOR 014 - List Request Approved",
+        "description": "",
+        "id": "job-order-request;jor-014---list-request-approved",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 141000,
+              "status": "skipped"
+            },
+            "line": 70,
+            "name": "Send request method to GET path to List Request Approved",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToListRequestApproved()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 264000,
+              "status": "skipped"
+            },
+            "line": 71,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 173000,
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "Validate json schema response List Request Approved",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseListRequestApproved()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 494000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 155000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.602Z",
+        "line": 74,
+        "name": "JOR 015 - List Request Rejected",
+        "description": "",
+        "id": "job-order-request;jor-015---list-request-rejected",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 213000,
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "Send request method to GET path to List Request Rejected",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToListRequestRejected()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164000,
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 153000,
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "Validate json schema response List Request Rejected",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseListRequestRejected()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 479000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 158000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 155000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.610Z",
+        "line": 79,
+        "name": "JOR 016 - List Request Revised",
+        "description": "",
+        "id": "job-order-request;jor-016---list-request-revised",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 141000,
+              "status": "skipped"
+            },
+            "line": 80,
+            "name": "Send request method to GET path to List Request Revised",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToListRequestRevised()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130000,
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 409000,
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "Validate json schema response List Request Revised",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseListRequestRevised()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 776000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 171000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 149000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.620Z",
+        "line": 84,
+        "name": "JOR 017 - List Request InProgress",
+        "description": "",
+        "id": "job-order-request;jor-017---list-request-inprogress",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 141000,
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "Send request method to GET path to List Request InProgress",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToListRequestInProgress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150000,
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 141000,
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "Validate json schema response List Request InProgress",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseListRequestInProgress()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "JOR - Add Data Job Order Request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)\" because \"this.jobOrderAPI\" is null\n\tat serenity.rest.starter@1.0.0-SNAPSHOT/step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest(jobOrder.java:19)\n\tat ✽.Valid Data JSON Job Order Request(classpath:features//jobOrder/jobOrder.feature:4)\n",
+              "duration": 515000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Valid Data JSON Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validDataJSONJobOrderRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 346000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Send request post Job Order Request",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestPostJobOrderRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 198000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the response status code should be 201 Created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeCreated(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-26T09:13:03.628Z",
+        "line": 89,
+        "name": "JOR 018 - List Request Draft",
+        "description": "",
+        "id": "job-order-request;jor-018---list-request-draft",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 186000,
+              "status": "skipped"
+            },
+            "line": 90,
+            "name": "Send request method to GET path to List Request Draft",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.sendRequestMethodToGETPathToListRequestDraft()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152000,
+              "status": "skipped"
+            },
+            "line": 91,
+            "name": "the response status code should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.utills.responseStatusCode.theResponseStatusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 152000,
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "Validate json schema response List Request Draft",
+            "match": {
+              "location": "step_definitions.jobOrder.jobOrder.validateJsonSchemaResponseListRequestDraft()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recruitment"
+          },
+          {
+            "name": "@JOR"
+          }
+        ]
+      }
+    ],
+    "name": "Job Order Request",
+    "description": "",
+    "id": "job-order-request",
+    "keyword": "Feature",
+    "uri": "classpath:features//jobOrder/jobOrder.feature",
+    "tags": [
+      {
+        "name": "@recruitment",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@JOR",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    ]
+  }
+]

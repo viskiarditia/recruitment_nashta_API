@@ -1,0 +1,55 @@
+-------------------------------------------------------------------------------
+Test set: Job Order Request
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 17, Skipped: 0, Time elapsed: 0.197 s <<< FAILURE! - in Job Order Request
+Job Order Request.JOR 002 - Update Job Order Request  Time elapsed: 0.03 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 003 - Delete Job Order Request  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 004 - Job Order Request Approval  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 005 - Job Order Request Rejected  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 006 - Job Order Request Revised  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 007 - Job Order Request In Progress  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 008 - Job Order Request In History Approval  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 009 - Job Order Request In History Rejected  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 010 - Job Order Request In History Revised  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 011 - Cancel Job Order Request  Time elapsed: 0.011 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 012 - Get One Job Order Request  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 013 - List Job Posting  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 014 - List Request Approved  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 015 - List Request Rejected  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 016 - List Request Revised  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 017 - List Request InProgress  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
+Job Order Request.JOR 018 - List Request Draft  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pageObjectAPI.jobOrder.jobOrderAPI.setJobOrderRequest(java.io.File)" because "this.jobOrderAPI" is null
+
