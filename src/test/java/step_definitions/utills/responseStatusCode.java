@@ -30,4 +30,8 @@ public class responseStatusCode {
     }
 
 
+    @Then("the response status code should be {int} No Content")
+    public void theResponseStatusCodeShouldBeNoContent(int status5) {
+        SerenityRest.then().statusCode(status5);
+    }
 }

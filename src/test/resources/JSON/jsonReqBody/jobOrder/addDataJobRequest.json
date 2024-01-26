@@ -1,0 +1,59 @@
+{
+  "age": [
+    {
+      "id": "string",
+      "remarks": "string"
+    }
+  ],
+  "business_unit_id": "694c9707-34b8-4920-adf7-165d90034e6a",
+  "date_of_needed": "2023-12-01",
+  "description_project": "string",
+  "draft": true,
+  "education": [
+    {
+      "id": "string"
+    }
+  ],
+  "estimated_salary": 8000000,
+  "estimated_salary_max": 8000000,
+  "experience": "f0567a23-cb38-424f-9c42-ba5c49acac8e",
+  "fulfillment_remarks": "-",
+  "gender": [
+    {
+      "id": "string"
+    }
+  ],
+  "job_desc": [
+    {
+      "description": "string",
+      "position": 0
+    }
+  ],
+  "job_desc_notes": "Lorem ipsum siamit dolor",
+  "job_position_id": "1c441991-01cd-4a27-8d85-8c93a548bd6b",
+  "job_status": "3342a9eb-0bed-4ef1-80aa-5843e5386064",
+  "location": "Remote",
+  "organization_id": "304ee7bf-4820-4690-a0cf-a27d8f4d5f0b",
+  "position_level": "75f7638e-0e1c-46ce-bfe2-9daf5d2146d1",
+  "project_id": "1c0fabad-2179-4704-9e3b-b443857de0b6",
+  "project_type": "03337747-7b69-4d35-9fdd-9397c452f473",
+  "reason_desc": "Lorem ipsum siamit dolor",
+  "reason_of_request": "48e50a62-0ca3-49cf-8d24-ce7f45d68488",
+  "requirement": [
+    {
+      "name": "string",
+      "position": 0,
+      "scale": "string",
+      "type": "string"
+    }
+  ],
+  "scale_of_need": "97e5deb5-1d82-406b-93b3-07b0335fc0b5",
+  "selection_test": [
+    {
+      "test_id": "string"
+    }
+  ],
+  "setting_id": "string",
+  "source_of_fulfillment": "2b9dd631-40ab-45e1-ac2b-2dd6c344b6b4",
+  "total_needed": 3
+}
